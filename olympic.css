@@ -1,0 +1,99 @@
+.rings{
+    width: 10em;
+    height: 10em;
+    border: 1em solid;
+    border-radius: 50%;
+    position: absolute;
+}
+.ring1{
+    border-color: blue;
+}
+.ring2{
+    left:13em;
+    border-color: black;
+}
+.ring3{
+    left:26em;
+    border-color: #E10E49;
+}
+.ring4{
+    left:6.5em;
+    top:6.5em;
+    border-color: #FFA100;
+}
+.ring5{
+    left:19.5em;
+    top:6.5em;
+    border-color: #009B3A;
+}
+.ring6{
+    left:13em;
+    top:13em;
+    border-color: aqua;
+}
+.patch{
+    width:2em;
+    height:2em;
+    position: absolute;
+    overflow: hidden;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5em 0 5em 10em;
+}
+.patch:before{
+    content: "";
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    top: -5em;
+    left: -10em;
+    border: 1em solid;
+    border-radius: 50%;
+}
+.patch::before{
+    border-color: blue;
+}
+.patch2{
+    left:13em;
+    top:1em;
+}
+.patch2::before{
+    border-color: black;
+}
+.patch3{
+    left:13em;
+    transform: rotate(100deg);   
+}
+.patch3::before{
+    border-color: black;
+}
+.patch4{
+    left: 13em;
+    transform: rotate(80deg);
+}
+.patch4::before{
+    border-color: black;
+}
+.patch5{
+    left:26em;
+    transform: rotate(100deg);
+}
+.patch5::before{
+    border-color: #E10E49;
+}
+.patch6{
+    left:6.5em;
+    top:6.5em;
+    transform: rotate(15deg);
+}
+.patch6::before{
+    border-color: #FFA100;
+}
+.patch7{
+    left: 19.5em;
+    top: 6.5em;
+    transform: rotate(165deg);
+}
+.patch7::before{
+    border-color: #009B3A;
+}
